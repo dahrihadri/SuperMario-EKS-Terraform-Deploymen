@@ -189,12 +189,14 @@ Make sure to provide your S3 bucket name and region in the `backend.tf` file. Th
    ```
    This command creates the infrastructure automatically.
 
+![chrome_6q3gldZbPv](https://github.com/user-attachments/assets/537d37b7-f178-4d57-ba0b-961314ebd0fb)
+
 Below command is used to update the configuration of EKS
 
    ```bash
    aws eks update-kubeconfig --name EKS_CLOUD --region us-east-1
    ```
-   
+ 
 The command aws eks update-kubeconfig --name EKS_CLOUD --region us-east-1 is like telling our computer, "Hey, I'm using Amazon EKS (Elastic Kubernetes Service) in the 'us-east-1' region, and I want to connect to it. you could use your desired location
 
 ---
@@ -222,12 +224,18 @@ Now that EKS is up, let’s deploy the Super Mario game!
    ```bash
    kubectl get all
    ```
+![chrome_XVVnZvIwlj](https://github.com/user-attachments/assets/1d9f6651-ed09-4565-9160-96b284deabc7)
 
 5. **Get the Load Balancer Ingress**:
    ```bash
    kubectl describe service mario-service
    ```
    Copy the **Load Balancer Ingress** and paste it in your browser. The Super Mario game should now be running! 🕹️
+
+![chrome_BptJVMvdGw](https://github.com/user-attachments/assets/3e0b2549-b51a-4f04-b477-0fcbba876a4c)
+
+![chrome_UOBurAYUe9](https://github.com/user-attachments/assets/8c96e9f0-eb43-4507-81e7-264522826d48)
+
 
 ---
 
