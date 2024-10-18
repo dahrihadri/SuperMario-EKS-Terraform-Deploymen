@@ -20,7 +20,7 @@ Don't worry—I'll explain the purpose of each step, so it's not just a set of i
 
 We'll go through the following steps:
 
-- [Step 1: Login and Basic Setup](#step-1:-login-and-basic-setup-🔑)
+- [Step 1: Login and Basic Setup](##step-1:-login-and-basic-setup-🔑)
 - **Step 2**: Setup Docker, Terraform, AWS CLI, and Kubectl
 - **Step 3**: Create IAM Role for EC2
 - **Step 4**: Attach IAM Role to EC2
