@@ -2,6 +2,8 @@
 
 ## Project Overview 🕹️
 
+![chrome_oOzsyPjd4Z](https://github.com/user-attachments/assets/d289a6ad-10d0-4fa9-9551-4062cf380917)
+
 Who doesn't love **Super Mario**? It's a timeless game that takes us back to our childhood. In this project, we'll deploy the Super Mario game on **Amazon EKS (Elastic Kubernetes Service)** using **Terraform**. We'll go through every step, from setting up the EC2 instance to running the game on Kubernetes!
 
 Don't worry—I'll explain the purpose of each step, so it's not just a set of instructions but a learning experience. Whether you're new to AWS or a seasoned DevOps professional, this guide will make sure you understand why we do things the way we do.
@@ -33,19 +35,29 @@ Let's get started! 🎮
 ---
 
 ## **Step 1: Login and Basic Setup** 🔑
-
 1. **Login to your AWS Account:** Log in as a root user.
+
+![chrome_59e9QQf6An](https://github.com/user-attachments/assets/59478c23-5f96-43f8-a1a1-01657b6107a6)
+
 2. **Launch an EC2 Instance:** Head to the EC2 console and launch an instance with the following:
+   - **Name:** Mario Game
+   - **AMI**: Amazon Linux 2 (Choose an Ubuntu AMI for compatibility with Docker and Terraform.)
    - Allow HTTP, HTTPS, and set a key pair.
-   - Choose an Ubuntu AMI for compatibility with Docker and Terraform.
+
+![chrome_bDzWQewKaN](https://github.com/user-attachments/assets/c37ec8bf-d1fd-4033-af89-6f750133b492)
+
+
 3. **Connect to EC2:** 
    - Go to the EC2 dashboard, select your instance, and click **Connect**.
-   - Use the **EC2 Instance Connect** option to get terminal access.
+   - Use the **EC2 Instance Connect** or via **SSH Client** option to get terminal access.
 4. **Run some basic commands:**
    ```bash
    sudo su
    apt update -y
    ```
+![chrome_2fcojOLbly](https://github.com/user-attachments/assets/0b8b7346-42b7-4bd1-ba80-96333ce6359d)
+
+![chrome_GKxHuZbjqv](https://github.com/user-attachments/assets/c61965ef-47c4-4abb-b687-6004686ecdbf)
 
 ---
 
@@ -59,6 +71,8 @@ apt install docker.io -y
 usermod -aG docker $USER
 newgrp docker
 ```
+
+![chrome_KCqK8rLW8t](https://github.com/user-attachments/assets/98300aaa-ca1c-45f9-9143-84bdbec4d5a7)
 
 ### **Install Terraform**
 Terraform is the backbone of this project, enabling us to define and deploy infrastructure as code.
