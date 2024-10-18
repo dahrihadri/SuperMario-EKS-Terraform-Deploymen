@@ -50,12 +50,14 @@ Let's get started! 🎮
 3. **Connect to EC2:** 
    - Go to the EC2 dashboard, select your instance, and click **Connect**.
    - Use the **EC2 Instance Connect** or via **SSH Client** option to get terminal access.
+
+![chrome_2fcojOLbly](https://github.com/user-attachments/assets/0b8b7346-42b7-4bd1-ba80-96333ce6359d)
+
 4. **Run some basic commands:**
    ```bash
    sudo su
    apt update -y
    ```
-![chrome_2fcojOLbly](https://github.com/user-attachments/assets/0b8b7346-42b7-4bd1-ba80-96333ce6359d)
 
 ![chrome_GKxHuZbjqv](https://github.com/user-attachments/assets/c61965ef-47c4-4abb-b687-6004686ecdbf)
 
@@ -84,6 +86,8 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 sudo apt update && sudo apt install terraform -y
 ```
 
+![chrome_t81eCGG7YI](https://github.com/user-attachments/assets/1e6f345b-4cef-4c46-a5e2-eb2832898ab3)
+
 ### **Install AWS CLI**
 AWS CLI allows you to interact with AWS resources via command-line, which is essential for managing EKS.
 
@@ -94,6 +98,8 @@ unzip awscliv2.zip
 sudo ./aws/install
 ```
 
+![chrome_ke5iAth3PV](https://github.com/user-attachments/assets/05efac3b-c3bc-4006-a59b-2d72da36f633)
+
 ### **Install Kubectl**
 Kubectl is the command-line tool to interact with Kubernetes clusters.
 
@@ -102,6 +108,8 @@ sudo apt install curl -y
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
+
+![chrome_R6Q9sgSgMl](https://github.com/user-attachments/assets/22af46db-c63a-467d-b98f-baf86fb1a20f)
 
 ---
 
@@ -114,6 +122,8 @@ We need an IAM role to allow our EC2 instance to interact with AWS services (lik
 2. **Create a Role** with **EC2** as the trusted entity.
 3. **Select Administrator Access** as the permission policy (for simplicity in this project).
 4. **Give the role a name** and create it.
+
+![chrome_YG3qHOv7xT](https://github.com/user-attachments/assets/cf443122-13fc-424a-b644-17e974636bea)
 
 ---
 
