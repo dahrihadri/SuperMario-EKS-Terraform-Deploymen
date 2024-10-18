@@ -164,11 +164,15 @@ Make sure to provide your S3 bucket name and region in the `backend.tf` file. Th
    ```
    This command sets up your working environment.
 
+![chrome_OgRDsGMbzg](https://github.com/user-attachments/assets/13977652-5f93-47a3-8040-addbdf4166fe)
+
 2. **Validate the Configuration**:
    ```bash
    terraform validate
    ```
    This ensures there are no syntax errors in your Terraform files.
+
+![chrome_qeitS98lz0](https://github.com/user-attachments/assets/453f0e1b-b7c1-4fa1-8f00-71906d41b9a8)
 
 3. **Plan the Infrastructure**:
    ```bash
@@ -176,11 +180,16 @@ Make sure to provide your S3 bucket name and region in the `backend.tf` file. Th
    ```
    Terraform will show you a blueprint of what resources will be created.
 
+![chrome_IiV5QD2NrJ](https://github.com/user-attachments/assets/4fae7d0f-2840-4963-bdfb-16585e27f39d)
+
+
 4. **Apply the Plan**:
    ```bash
    terraform apply --auto-approve
    ```
    This command creates the infrastructure automatically.
+
+
 
 ---
 
