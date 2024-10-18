@@ -194,10 +194,10 @@ Make sure to provide your S3 bucket name and region in the `backend.tf` file. Th
 Below command is used to update the configuration of EKS
 
    ```bash
-   aws eks update-kubeconfig --name EKS_CLOUD --region us-east-1
+   aws eks update-kubeconfig --name EKS_CLOUD --region ap-southeast-1
    ```
  
-The command aws eks update-kubeconfig --name EKS_CLOUD --region us-east-1 is like telling our computer, "Hey, I'm using Amazon EKS (Elastic Kubernetes Service) in the 'us-east-1' region, and I want to connect to it. you could use your desired location
+The command aws eks update-kubeconfig --name EKS_CLOUD --region ap-southeast-1 is like telling our computer, "Hey, I'm using Amazon EKS (Elastic Kubernetes Service) in the 'us-east-1' region, and I want to connect to it. you could use your desired location
 
 ---
 
