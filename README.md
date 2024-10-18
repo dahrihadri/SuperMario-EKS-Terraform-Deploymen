@@ -32,7 +32,7 @@ Let's get started! 🎮
 
 ---
 
-## Step 1: Login and Basic Setup 🔑
+## **Step 1: Login and Basic Setup** 🔑
 
 1. **Login to your AWS Account:** Log in as a root user.
 2. **Launch an EC2 Instance:** Head to the EC2 console and launch an instance with the following:
