@@ -254,6 +254,7 @@ Before you leave, remember to clean up to avoid unnecessary AWS charges!
    cd EKS-TF
    terraform destroy --auto-approve
    ```
+![chrome_dvIJVUnKPL](https://github.com/user-attachments/assets/87c31dd9-5bb6-44e7-bde6-f8ffc5b07d10)
 
 3. **Terminate the EC2 Instance**:
    Go to the EC2 dashboard and terminate your instance.
