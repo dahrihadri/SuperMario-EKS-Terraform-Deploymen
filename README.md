@@ -44,8 +44,7 @@ Let's get started! 🎮
    - **AMI**: Amazon Linux 2 (Choose an Ubuntu AMI for compatibility with Docker and Terraform.)
    - Allow HTTP, HTTPS, and set a key pair.
 
-![chrome_bDzWQewKaN](https://github.com/user-attachments/assets/c37ec8bf-d1fd-4033-af89-6f750133b492)
-
+![chrome_UIrRkLTVr3](https://github.com/user-attachments/assets/fbe1f4a2-bd25-49df-96c8-1585c61a42b0)
 
 3. **Connect to EC2:** 
    - Go to the EC2 dashboard, select your instance, and click **Connect**.
@@ -123,7 +122,7 @@ We need an IAM role to allow our EC2 instance to interact with AWS services (lik
 3. **Select Administrator Access** as the permission policy (for simplicity in this project).
 4. **Give the role a name** and create it.
 
-![chrome_YG3qHOv7xT](https://github.com/user-attachments/assets/cf443122-13fc-424a-b644-17e974636bea)
+![chrome_Meui5kYW0F](https://github.com/user-attachments/assets/d136fedd-ced6-4d3d-8fc2-f21719836a83)
 
 ---
 
@@ -132,6 +131,8 @@ We need an IAM role to allow our EC2 instance to interact with AWS services (lik
 1. Go to the **EC2 dashboard**.
 2. Click on **Actions > Security > Modify IAM Role**.
 3. Select the IAM role you created in Step 3 and attach it to your EC2 instance.
+
+![chrome_GgUVYNex5Z](https://github.com/user-attachments/assets/ad5ca74a-5252-463c-8d47-8ed79e360228)
 
 ---
 
@@ -143,12 +144,17 @@ Now that everything is set up, let's use Terraform to build the infrastructure.
 ```bash
 mkdir super_mario
 cd super_mario
-git clone https://github.com/Aakibgithuber/Deployment-of-super-Mario-on-Kubernetes-using-terraform.git
-cd Deployment-of-super-Mario-on-Kubernetes-using-terraform/EKS-TF
+git clone https://github.com/dahrihadri/SuperMario-EKS-Terraform-Deployment.git
+cd SuperMario-EKS-Terraform-Deployment/EKS-TF
 ```
+
+![chrome_xQbu3B64Sj](https://github.com/user-attachments/assets/38a9046d-29d9-4a8f-acbd-73a0e18b14f2)
+
 
 ### **Edit `backend.tf`**
 Make sure to provide your S3 bucket name and region in the `backend.tf` file. This allows Terraform to store the state file in S3.
+
+![image](https://github.com/user-attachments/assets/5e3cc980-f6cc-4021-87ca-638f0f20bba9)
 
 ### **Run Terraform Commands**
 
