@@ -8,6 +8,8 @@ Who doesn't love **Super Mario**? It's a timeless game that takes us back to our
 
 Don't worry—I'll explain the purpose of each step, so it's not just a set of instructions but a learning experience. Whether you're new to AWS or a seasoned DevOps professional, this guide will make sure you understand why we do things the way we do.
 
+![chrome_0bXCVtbUZE](https://github.com/user-attachments/assets/01e8a908-9062-4b44-8e84-14a40cd8c90b)
+
 ---
 
 ## Prerequisites ✅
